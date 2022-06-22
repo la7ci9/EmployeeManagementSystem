@@ -28,6 +28,10 @@ public class Employee {
 	private String email;
 	private String position;
 	
+	public Employee() {
+		
+	}
+	
 	public Employee(String firstName, String lastName, String phoneNumber, String email, String position) {
 		this.firstName = firstName;
 		this.lastName = lastName;
