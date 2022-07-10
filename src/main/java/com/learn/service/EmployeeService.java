@@ -22,6 +22,22 @@ public class EmployeeService implements EmployeeServiceDAO {
 	public Employee saveEmployee(Employee emp) {
 		return employeeRepository.save(emp);
 	}
+
+	@Override
+	public Employee getEmployeeById(Long id) {
+		return employeeRepository.findById(id).get();
+	}
+
+	@Override
+	public Employee updateEmployee(Employee emp) {
+		return employeeRepository.save(emp);
+	}
+
+	@Override
+	public void deleteEmployeeById(Long id) {
+		employeeRepository.deleteById(id);
+		
+	}
 	
 
 }
