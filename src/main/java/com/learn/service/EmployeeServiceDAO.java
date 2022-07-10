@@ -9,4 +9,10 @@ public interface EmployeeServiceDAO {
 	List<Employee> getAllEmployees();
 	
 	Employee saveEmployee(Employee emp);
+	
+	Employee getEmployeeById(Long id);
+	
+	Employee updateEmployee(Employee emp);
+	
+	void deleteEmployeeById(Long id);
 }
