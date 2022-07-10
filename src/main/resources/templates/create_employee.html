@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Add employee</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+	<div>
+		<div>
+			<div>
+				<h1>Create new employee</h1>
+				<div>
+					<form th:action = "@{/employees}" th:object = "${employee}" method="POST" class="add_body">
+						<div>
+							<label>Employee First Name</label>
+							<input
+							 type = "text"
+							 name = "firstName"
+							 th:field = "*{firstName}"
+							 placeholder="Enter employee first name"/>
+						 </div>
+						 
+						 <div>
+							<label>Employee Last Name</label>
+							<input
+							 type = "text"
+							 name = "lastName"
+							 th:field = "*{lastName}"
+							 placeholder="Enter employee last name"/>
+						 </div>
+						 
+						 <div>
+							<label>Employee Phone number</label>
+							<input
+							 type = "text"
+							 name = "phoneNumber"
+							 th:field = "*{phoneNumber}"
+							 placeholder="Enter employee phone number"/>
+						 </div>
+						 
+						 <div>
+							<label>Employee Email</label>
+							<input
+							 type = "text"
+							 name = "email"
+							 th:field = "*{email}"
+							 placeholder="Enter Student email"/>
+						 </div>
+						 
+						  <div>
+							<label>Employee Position</label>
+							<input
+							 type = "text"
+							 name = "position"
+							 th:field = "*{position}"
+							 placeholder="Enter employee position"/>
+						 </div>
+						 
+						 <div>
+						 	<button>Submit</button>
+						 </div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
