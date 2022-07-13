@@ -11,6 +11,7 @@
 			<div>
 				<h1>Create new employee</h1>
 				<div>
+				<a th:href = "@{/employees}">Back</a>
 					<form th:action = "@{/employees}" th:object = "${employee}" method="POST" class="add_body">
 						<div>
 							<label>Employee First Name</label>
