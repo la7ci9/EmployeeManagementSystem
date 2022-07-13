@@ -2,9 +2,12 @@ package com.learn.service;
 
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.learn.entity.Employee;
 import com.learn.repository.EmployeeRepository;
 
+@Service
 public class EmployeeService implements EmployeeServiceDAO {
 
 	private EmployeeRepository employeeRepository;
