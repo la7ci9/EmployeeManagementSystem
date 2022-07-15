@@ -34,8 +34,8 @@
 					<td th:text = "${employee.email}"></td>
 					<td>
 						<span class="action_buttons">
-							<a>Update</a>
-							<a>Delete</a>
+							<a th:href = "@{/employees/edit/{id}(id=${employee.id})}">Update</a>
+							<a th:href = "@{/employees/{id}(id=${employee.id})}">Delete</a>
 							<a>View</a>
 						</span>
 					</td>
